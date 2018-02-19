@@ -2,9 +2,11 @@ from Bird import Bird
 from get_random_sex import get_random_sex
 from get_random_weight import get_random_weight
 
+
 class Duck(Bird):
     feathers_color = 'green/white'
     fly_away_to_winter = True
+
 
 duck_girl = Duck('f', get_random_weight(5))
 duck_man = Duck('m', get_random_weight(8))

@@ -2,8 +2,10 @@ from Mammal import Mammal
 from get_random_sex import get_random_sex
 from get_random_weight import get_random_weight
 
+
 class Cow(Mammal):
     has_horns = True
+
 
 cow = Cow('f', get_random_weight(400))
 bull = Cow('m',  get_random_weight(400))

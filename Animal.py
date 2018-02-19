@@ -2,9 +2,9 @@ class Animal:
     it_alive = True
     has_brain = True
     has_heart = True
-    has_nervers = True
-    weight = 0 # kilograms
-    sex = None # 'm' or 'f'
+    has_nerves = True
+    weight = 0  # kilograms
+    sex = None  # 'm' or 'f'
     it_pregnant = None
 
     def __init__(self, sex, weight):
@@ -15,14 +15,14 @@ class Animal:
         self.eat(food)
 
     def eat(self, food):
-        callories = ((food['protein'] * 4) + (food['carbohydrate'] * 4) + (food['fat'] * 9))
-        self.digestion(callories)
+        calories = ((food['protein'] * 4) + (food['carbohydrate'] * 4) + (food['fat'] * 9))
+        self.digestion(calories)
 
-    def digestion(self, callories):
-        self.gain(callories)
+    def digestion(self, calories):
+        self.gain(calories)
 
-    def gain(self, callories):
-        self.weight += (callories / 1000) # (callories / 1000) for example
+    def gain(self, calories):
+        self.weight += (calories / 1000)  # (calories / 1000) for example
 
     def reproduce(self, partner):
         if self.it_alive and self.sex != partner.sex:
