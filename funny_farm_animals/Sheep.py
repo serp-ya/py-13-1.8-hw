@@ -12,4 +12,4 @@ ram = Sheep('m',  get_random_weight(80))
 
 sheep.reproduce(ram)
 
-lamb = sheep.give_a_birth(Sheep, get_random_sex(), get_random_weight(20))
+lamb = sheep.give_a_birth(get_random_sex(), get_random_weight(20))

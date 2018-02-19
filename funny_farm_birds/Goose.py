@@ -13,4 +13,4 @@ goose_man = Goose('m', get_random_weight(10))
 
 goose_girl.reproduce(goose_man)
 
-goose_child = goose_girl.give_a_birth(Goose, get_random_sex(), get_random_weight(4))
+goose_child = goose_girl.give_a_birth(get_random_sex(), get_random_weight(4))
